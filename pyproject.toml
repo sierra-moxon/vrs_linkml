@@ -1,15 +1,14 @@
 [tool.poetry]
-name = "vrs_linkml"
+name = "vrs-linkml"
 version = "0.1.0"
-description = "LinkML version of GA4GH Variation Representation Specification"
+description = ""
 authors = ["Sierra Taylor Moxon <sierra.taylor@gmail.com>"]
-license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-linkml = "^1.2.7"
 
 [tool.poetry.dev-dependencies]
+pytest = "^5.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
