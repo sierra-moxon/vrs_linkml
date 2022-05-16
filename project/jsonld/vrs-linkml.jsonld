@@ -2061,7 +2061,7 @@
   "source_file": "vrs-linkml.yaml",
   "source_file_date": "2022-05-16T13:33:09",
   "source_file_size": 16341,
-  "generation_date": "2022-05-16T13:34:31",
+  "generation_date": "2022-05-16T13:37:59",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/vrs-linkml.context.jsonld",

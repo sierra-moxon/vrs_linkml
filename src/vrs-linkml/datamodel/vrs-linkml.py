@@ -1,5 +1,5 @@
 # Auto generated from vrs-linkml.yaml by pythongen.py version: 0.9.0
-# Generation date: 2022-05-16T13:34:34
+# Generation date: 2022-05-16T13:38:02
 # Schema: GA4GHVRSDefinitions
 #
 # id: GA4GHVRSDefinitions

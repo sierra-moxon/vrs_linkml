@@ -1,5 +1,5 @@
 {
-   "_comments": "Auto generated from vrs-linkml.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2022-05-16T13:34:31\n    Schema: GA4GHVRSDefinitions\n    metamodel version: 1.7.0\n    model version: None\n    \n    id: GA4GHVRSDefinitions\n    description: \n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "_comments": "Auto generated from vrs-linkml.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2022-05-16T13:37:59\n    Schema: GA4GHVRSDefinitions\n    metamodel version: 1.7.0\n    model version: None\n    \n    id: GA4GHVRSDefinitions\n    description: \n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
    "@context": {
       "GA4GHVRSDefinitions": {
          "@id": "GA4GHVRSDefinitions",
