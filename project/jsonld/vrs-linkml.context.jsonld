@@ -1,0 +1,56 @@
+{
+   "_comments": "Auto generated from vrs-linkml.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2022-05-16T13:34:31\n    Schema: GA4GHVRSDefinitions\n    metamodel version: 1.7.0\n    model version: None\n    \n    id: GA4GHVRSDefinitions\n    description: \n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "@context": {
+      "GA4GHVRSDefinitions": {
+         "@id": "GA4GHVRSDefinitions",
+         "@prefix": true
+      },
+      "linkml": "https://w3id.org/linkml/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "@vocab": "GA4GHVRSDefinitions",
+      "_id": {
+         "@type": "@id"
+      },
+      "comparator": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "end": {
+         "@type": "xsd:integer"
+      },
+      "gene_id": {
+         "@type": "@id"
+      },
+      "location": {
+         "@type": "@id"
+      },
+      "max": {
+         "@type": "xsd:float"
+      },
+      "min": {
+         "@type": "xsd:float"
+      },
+      "reverse_complement": {
+         "@type": "xsd:boolean"
+      },
+      "sequence": {
+         "@type": "@id"
+      },
+      "sequence_id": {
+         "@type": "@id"
+      },
+      "species_id": {
+         "@type": "@id"
+      },
+      "start": {
+         "@type": "xsd:integer"
+      },
+      "value": {
+         "@type": "xsd:float"
+      }
+   }
+}

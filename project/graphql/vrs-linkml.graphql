@@ -1,0 +1,177 @@
+type Allele
+  {
+    id: CURIE
+    type: String!
+    location: SequenceLocation!
+    state: String!
+  }
+
+type ChromosomeLocation
+  {
+    id: CURIE
+    type: String!
+    speciesId: CURIE!
+    chr: String!
+    interval: CytobandInterval!
+  }
+
+type ComposedSequenceExpression
+  {
+    type: String!
+    components: [String]!
+  }
+
+type CopyNumber
+  {
+    id: CURIE
+    type: String!
+    subject: String!
+    copies: String!
+  }
+
+type CURIE
+  {
+  }
+
+type CytobandInterval
+  {
+    type: String!
+    start: HumanCytoband!
+    end: HumanCytoband!
+  }
+
+type DefiniteRange
+  {
+    type: String!
+    min: Float!
+    max: Float!
+  }
+
+type DerivedSequenceExpression
+  {
+    type: String!
+    location: SequenceLocation!
+    reverseComplement: Boolean!
+  }
+
+type Feature
+  {
+  }
+
+type Gene
+  {
+    type: String!
+    geneId: CURIE!
+  }
+
+type Haplotype
+  {
+    id: CURIE
+    type: String!
+    members: [String]!
+  }
+
+type HumanCytoband
+  {
+  }
+
+type IndefiniteRange
+  {
+    type: String!
+    value: Float!
+    comparator: ComparatorOptions!
+  }
+
+type LiteralSequenceExpression
+  {
+    type: String!
+    sequence: Sequence!
+  }
+
+type Location
+  {
+  }
+
+type MolecularVariation
+  {
+  }
+
+type Number
+  {
+    type: String!
+    value: Integer!
+  }
+
+type RepeatedSequenceExpression
+  {
+    type: String!
+    seqExpr: String!
+    count: String!
+  }
+
+type Residue
+  {
+  }
+
+type Sequence
+  {
+  }
+
+type SequenceExpression
+  {
+  }
+
+type SequenceInterval
+  {
+    type: String!
+    start: Integer!
+    end: Integer!
+  }
+
+type SequenceLocation
+  {
+    id: CURIE
+    type: String!
+    sequenceId: CURIE!
+    interval: String!
+  }
+
+type SequenceState
+  {
+    type: String!
+    sequence: Sequence!
+  }
+
+type SimpleInterval
+  {
+    type: String!
+    start: Integer!
+    end: Integer!
+  }
+
+type SystemicVariation
+  {
+  }
+
+type Text
+  {
+    id: CURIE
+    type: String!
+    definition: String!
+  }
+
+type UtilityVariation
+  {
+  }
+
+type Variation
+  {
+  }
+
+type VariationSet
+  {
+    id: CURIE
+    type: String!
+    members: [String]!
+  }
+

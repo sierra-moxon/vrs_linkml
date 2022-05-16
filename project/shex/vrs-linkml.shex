@@ -1,0 +1,272 @@
+BASE <GA4GHVRSDefinitions/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX linkml: <https://w3id.org/linkml/>
+
+
+linkml:String xsd:string
+
+linkml:Integer xsd:integer
+
+linkml:Boolean xsd:boolean
+
+linkml:Float xsd:float
+
+linkml:Double xsd:double
+
+linkml:Decimal xsd:decimal
+
+linkml:Time xsd:dateTime
+
+linkml:Date xsd:date
+
+linkml:Datetime xsd:dateTime
+
+linkml:Uriorcurie IRI
+
+linkml:Uri IRI
+
+linkml:Ncname xsd:string
+
+linkml:Objectidentifier IRI
+
+linkml:Nodeidentifier NONLITERAL
+
+<GA4GHVRSDefinitionsAllele> CLOSED {
+    (  $<GA4GHVRSDefinitionsAllele_tes> (  <GA4GHVRSDefinitions_id> @<GA4GHVRSDefinitionsCURIE> ? ;
+          <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionslocation> @<GA4GHVRSDefinitionsSequenceLocation> ;
+          <GA4GHVRSDefinitionsstate> @linkml:String
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsAllele> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsChromosomeLocation> CLOSED {
+    (  $<GA4GHVRSDefinitionsChromosomeLocation_tes> (  <GA4GHVRSDefinitions_id> @<GA4GHVRSDefinitionsCURIE> ? ;
+          <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsspecies_id> @<GA4GHVRSDefinitionsCURIE> ;
+          <GA4GHVRSDefinitionschr> @linkml:String ;
+          <GA4GHVRSDefinitionsinterval> @<GA4GHVRSDefinitionsCytobandInterval>
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsChromosomeLocation> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsComposedSequenceExpression> CLOSED {
+    (  $<GA4GHVRSDefinitionsComposedSequenceExpression_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionscomponents> @linkml:String +
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsComposedSequenceExpression> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsCopyNumber> CLOSED {
+    (  $<GA4GHVRSDefinitionsCopyNumber_tes> (  <GA4GHVRSDefinitions_id> @<GA4GHVRSDefinitionsCURIE> ? ;
+          <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionssubject> @linkml:String ;
+          <GA4GHVRSDefinitionscopies> @linkml:String
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsCopyNumber> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsCURIE> CLOSED {
+    (  $<GA4GHVRSDefinitionsCURIE_tes> rdf:type . * ;
+       rdf:type [ <GA4GHVRSDefinitionsCURIE> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsCytobandInterval> CLOSED {
+    (  $<GA4GHVRSDefinitionsCytobandInterval_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsstart> @<GA4GHVRSDefinitionsHumanCytoband> ;
+          <GA4GHVRSDefinitionsend> @<GA4GHVRSDefinitionsHumanCytoband>
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsCytobandInterval> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsDefiniteRange> CLOSED {
+    (  $<GA4GHVRSDefinitionsDefiniteRange_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsmin> @linkml:Float ;
+          <GA4GHVRSDefinitionsmax> @linkml:Float
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsDefiniteRange> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsDerivedSequenceExpression> CLOSED {
+    (  $<GA4GHVRSDefinitionsDerivedSequenceExpression_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionslocation> @<GA4GHVRSDefinitionsSequenceLocation> ;
+          <GA4GHVRSDefinitionsreverse_complement> @linkml:Boolean
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsDerivedSequenceExpression> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsFeature> CLOSED {
+    (  $<GA4GHVRSDefinitionsFeature_tes> rdf:type . * ;
+       rdf:type [ <GA4GHVRSDefinitionsFeature> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsGene> CLOSED {
+    (  $<GA4GHVRSDefinitionsGene_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsgene_id> @<GA4GHVRSDefinitionsCURIE>
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsGene> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsHaplotype> CLOSED {
+    (  $<GA4GHVRSDefinitionsHaplotype_tes> (  <GA4GHVRSDefinitions_id> @<GA4GHVRSDefinitionsCURIE> ? ;
+          <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsmembers> @linkml:String +
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsHaplotype> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsHumanCytoband> CLOSED {
+    (  $<GA4GHVRSDefinitionsHumanCytoband_tes> rdf:type . * ;
+       rdf:type [ <GA4GHVRSDefinitionsHumanCytoband> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsIndefiniteRange> CLOSED {
+    (  $<GA4GHVRSDefinitionsIndefiniteRange_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsvalue> @linkml:Float ;
+          <GA4GHVRSDefinitionscomparator> @<GA4GHVRSDefinitionsComparatorOptions>
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsIndefiniteRange> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsLiteralSequenceExpression> CLOSED {
+    (  $<GA4GHVRSDefinitionsLiteralSequenceExpression_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionssequence> @<GA4GHVRSDefinitionsSequence>
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsLiteralSequenceExpression> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsLocation> CLOSED {
+    (  $<GA4GHVRSDefinitionsLocation_tes> rdf:type . * ;
+       rdf:type [ <GA4GHVRSDefinitionsLocation> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsMolecularVariation> CLOSED {
+    (  $<GA4GHVRSDefinitionsMolecularVariation_tes> rdf:type . * ;
+       rdf:type [ <GA4GHVRSDefinitionsMolecularVariation> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsNumber> CLOSED {
+    (  $<GA4GHVRSDefinitionsNumber_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsvalue> @linkml:Integer
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsNumber> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsRepeatedSequenceExpression> CLOSED {
+    (  $<GA4GHVRSDefinitionsRepeatedSequenceExpression_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsseq_expr> @linkml:String ;
+          <GA4GHVRSDefinitionscount> @linkml:String
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsRepeatedSequenceExpression> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsResidue> CLOSED {
+    (  $<GA4GHVRSDefinitionsResidue_tes> rdf:type . * ;
+       rdf:type [ <GA4GHVRSDefinitionsResidue> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsSequence> CLOSED {
+    (  $<GA4GHVRSDefinitionsSequence_tes> rdf:type . * ;
+       rdf:type [ <GA4GHVRSDefinitionsSequence> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsSequenceExpression> CLOSED {
+    (  $<GA4GHVRSDefinitionsSequenceExpression_tes> rdf:type . * ;
+       rdf:type [ <GA4GHVRSDefinitionsSequenceExpression> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsSequenceInterval> CLOSED {
+    (  $<GA4GHVRSDefinitionsSequenceInterval_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsstart> @linkml:Integer ;
+          <GA4GHVRSDefinitionsend> @linkml:Integer
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsSequenceInterval> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsSequenceLocation> CLOSED {
+    (  $<GA4GHVRSDefinitionsSequenceLocation_tes> (  <GA4GHVRSDefinitions_id> @<GA4GHVRSDefinitionsCURIE> ? ;
+          <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionssequence_id> @<GA4GHVRSDefinitionsCURIE> ;
+          <GA4GHVRSDefinitionsinterval> @linkml:String
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsSequenceLocation> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsSequenceState> CLOSED {
+    (  $<GA4GHVRSDefinitionsSequenceState_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionssequence> @<GA4GHVRSDefinitionsSequence>
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsSequenceState> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsSimpleInterval> CLOSED {
+    (  $<GA4GHVRSDefinitionsSimpleInterval_tes> (  <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsstart> @linkml:Integer ;
+          <GA4GHVRSDefinitionsend> @linkml:Integer
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsSimpleInterval> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsSystemicVariation> CLOSED {
+    (  $<GA4GHVRSDefinitionsSystemicVariation_tes> rdf:type . * ;
+       rdf:type [ <GA4GHVRSDefinitionsSystemicVariation> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsText> CLOSED {
+    (  $<GA4GHVRSDefinitionsText_tes> (  <GA4GHVRSDefinitions_id> @<GA4GHVRSDefinitionsCURIE> ? ;
+          <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsdefinition> @linkml:String
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsText> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsUtilityVariation> CLOSED {
+    (  $<GA4GHVRSDefinitionsUtilityVariation_tes> rdf:type . * ;
+       rdf:type [ <GA4GHVRSDefinitionsUtilityVariation> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsVariation> CLOSED {
+    (  $<GA4GHVRSDefinitionsVariation_tes> rdf:type . * ;
+       rdf:type [ <GA4GHVRSDefinitionsVariation> ] ?
+    )
+}
+
+<GA4GHVRSDefinitionsVariationSet> CLOSED {
+    (  $<GA4GHVRSDefinitionsVariationSet_tes> (  <GA4GHVRSDefinitions_id> @<GA4GHVRSDefinitionsCURIE> ? ;
+          <GA4GHVRSDefinitionstype> @linkml:String ;
+          <GA4GHVRSDefinitionsmembers> @linkml:String +
+       ) ;
+       rdf:type [ <GA4GHVRSDefinitionsVariationSet> ] ?
+    )
+}
+
+
